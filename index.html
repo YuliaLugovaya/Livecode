@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/styles/style.css" />
     <link rel="stylesheet" href="/assets/styles/normalize.css" />
+    <link rel="stylesheet" href="/assets/styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,69 +17,54 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header_block">
-          <a class="header_logo" href="/">Thrivetalk</a>
-          <nav class="header_nav">
-            <a href="/" class="header_menu">Home</a>
-            <a href="/" class="header_menu">About</a>
-            <a href="/" class="header_menu">Services</a>
-            <a href="/" class="header_menu">Blog</a>
+        <div class="header__container">
+          <a class="header__logo" href="/">Thrivetalk</a>
+          <nav class="nav">
+            <a href="#" class="nav__link">Home</a>
+            <a href="#" class="nav__link">About</a>
+            <a href="#" class="nav__link">Services</a>
+            <a href="#" class="nav__link">Blog</a>
           </nav>
-          <form action="/" class="header_btn">
-            <button class="header_button" type="submit">Contact us</button>
-          </form>
+          <button class="header__button" type="submit">Contact us</button>
         </div>
       </header>
-      <main class="page">
-        <section class="container_1">
-          <div class="container_1_block_1">
-            <div class="container_1_block_1_content">
-              <h1 class="container_1_block_1_title_1">Thrivetalk</h1>
-              <h2 class="container_1_block_1_title_2">
+      <main class="main">
+        <section class="section-head">
+          <div class="section-head__info">
+            <div class="section-head__content">
+              <h1 class="section-head__subtitle">Thrivetalk</h1>
+              <h2 class="section-head__title">
                 HELPING YOU THRIVE IN ALL AREAS OF LIFE
               </h2>
-              <p class="container_1_block_1_text">
+              <p class="section-head__text">
                 Our highly talented therapists can help you with a range of
                 issues including relationships, sex, PTSD, depression, social
                 anxiety, or even just caring for yourself more.
               </p>
-              <div class="container_1_buttons">
-                <form action="/">
-                  <button class="container_1_button_1" type="submit">
-                    WHO AM I
-                  </button>
-                </form>
-                <form action="/">
-                  <button class="container_1_button_2" type="submit">
-                    WHAT DO I DO
-                  </button>
-                </form>
+              <div class="section-head__buttons">
+                <button class="section-head__button-1" type="submit">
+                  WHO AM I
+                </button>
+                <button class="section-head__button-2" type="submit">
+                  WHAT DO I DO
+                </button>
               </div>
             </div>
           </div>
-          <div class="container_1_block_2">
-            <div class="container_1_block_2_decor">
-              <!--<img
-                class="container_1_block_2_oval"
-                src="./assets/images/container_1_oval.png"
-                alt="Oval"
-              />-->
-              <img
-                class="container_1_block_2_photo"
-                src="./assets/images/container_1_photo(2).png"
-                alt="Photo"
-              />
-            </div>
-          </div>
+          <img
+            class="section-head__image"
+            src="./assets/images/section-head.png"
+            alt="Photo"
+          />
         </section>
-        <section class="container_2">
-          <div class="container_2_block_1">
-            <div class="container_2_block_1_content">
-              <h2 class="container_2_block_1_title">Why Thrive?</h2>
-              <p class="container_2_block_1_text">
+        <section class="section-whythrive">
+          <div class="section-whythrive__info">
+            <div class="section-whythrive__content">
+              <h2 class="section-whythrive__title">Why Thrive?</h2>
+              <p class="section-whythrive__text">
                 Want to improve your well-being from the comfort of your own
                 couch? Are you having trouble finding the right therapist?
-                <span id="container_2_block_1_text_small">
+                <span class="section-whythrive__text_small">
                   Here at ThriveTalk, our licensed therapists provide the same
                   quality care you would get in office from anywhere you can
                   access your laptop or mobile phone. Become your best self with
@@ -88,14 +73,16 @@
               </p>
             </div>
           </div>
-          <div class="container_2_block_2">
-            <img src="./assets/images/container_2.jpg" alt="Photo" />
-          </div>
+          <img
+            class="section-whythrive__image"
+            src="./assets/images/section-whythrive.jpg"
+            alt="Photo"
+          />
         </section>
-        <section class="container_3">
-          <div class="container_3_block_1">
-            <h2 class="container_3_block_1_title">ABOUT US</h2>
-            <p class="container_3_block_1_text">
+        <section class="section-about">
+          <div class="section-about__info">
+            <h2 class="section-about__title">ABOUT US</h2>
+            <p class="section-about__text">
               We want to help you thrive! Whether you are just looking for
               someone to talk to, or are struggling with a mental wellness issue
               we’re here to help. Our highly talented therapists can help you
@@ -103,78 +90,211 @@
               depression, social anxiety, or even just caring for yourself more.
             </p>
           </div>
-          <div class="container_3_block_2">
-            <h2 class="container_3_block_2_title">WE CAN HELP YOU WITH</h2>
-            <div class="container_3_block_2_points">
-              <div class="container_3_block_2_point_1">
-                <img
-                  class="container_3_block_2_point_line"
-                  src="./assets/images/container_3_line.svg"
-                  alt="Line"
-                />
-                <div class="container_3_block_2_point_text">
-                  <img
-                    class="container_3_block_2_point_circle"
-                    src="./assets/images/container_3_circle.svg"
-                    alt="Orange Circle"
-                  />
-                  <h3 class="container_3_block_2_point_title">
-                    Weight Lifting
-                  </h3>
+          <div class="section-about__help">
+            <h2 class="section-about__title-grey">WE CAN HELP YOU WITH</h2>
+            <div class="section-about__items">
+              <div class="section-about__item section-about__item_pink">
+                <div class="section-about__item-text">
+                  <p class="section-about__item-circle">&bull;</p>
+                  <h3 class="section-about__item-title">Weight Lifting</h3>
                 </div>
               </div>
-              <div class="container_3_block_2_point_2">
-                <img
-                  class="container_3_block_2_point_line"
-                  src="./assets/images/container_3_line_2.svg"
-                  alt="Line"
-                />
-                <div class="container_3_block_2_point_text">
-                  <img
-                    class="container_3_block_2_point_circle"
-                    src="./assets/images/container_3_circle.svg"
-                    alt="Orange Circle"
-                  />
-                  <h3 class="container_3_block_2_point_title">
-                    Running & Spinning
-                  </h3>
+              <div class="section-about__item section-about__item_green">
+                <div class="section-about__item-text">
+                  <p class="section-about__item-circle">&bull;</p>
+                  <h3 class="section-about__item-title">Running & Spinning</h3>
                 </div>
               </div>
-              <div class="container_3_block_2_point_3">
-                <img
-                  class="container_3_block_2_point_line"
-                  src="./assets/images/container_3_line_3.svg"
-                  alt="Line"
-                />
-                <div class="container_3_block_2_point_text">
-                  <img
-                    class="container_3_block_2_point_circle"
-                    src="./assets/images/container_3_circle.svg"
-                    alt="Orange Circle"
-                  />
-                  <h3 class="container_3_block_2_point_title">Pumping Iron</h3>
+              <div class="section-about__item section-about__item_blue">
+                <div class="section-about__item-text">
+                  <p class="section-about__item-circle">&bull;</p>
+                  <h3 class="section-about__item-title">Pumping Iron</h3>
                 </div>
               </div>
-              <div class="container_3_block_2_point_4">
-                <img
-                  class="container_3_block_2_point_line"
-                  src="./assets/images/container_3_line_4.svg"
-                  alt="Line"
-                />
-                <div class="container_3_block_2_point_text">
-                  <img
-                    class="container_3_block_2_point_circle"
-                    src="./assets/images/container_3_circle.svg"
-                    alt="Orange Circle"
-                  />
-                  <h3 class="container_3_block_2_point_title">Pumping Iron</h3>
+              <div class="section-about__item section-about__item_indigo">
+                <div class="section-about__item-text">
+                  <p class="section-about__item-circle">&bull;</p>
+                  <h3 class="section-about__item-title">Pumping Iron</h3>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <section class="section-services">
+          <div class="services services_physical">
+            <div class="services__info">
+              <p class="services__circle">&bull;</p>
+              <h3 class="services__title">Physical Health</h3>
+            </div>
+          </div>
+          <div class="services services_mental">
+            <div class="services__info">
+              <p class="services__circle">&bull;</p>
+              <h3 class="services__title">Mental Health</h3>
+            </div>
+          </div>
+          <div class="services services_nutricion">
+            <div class="services__info">
+              <p class="services__circle">&bull;</p>
+              <h3 class="services__title">Nutricion</h3>
+            </div>
+          </div>
+          <div class="services services_gymnastics">
+            <div class="services__info">
+              <p class="services__circle">&bull;</p>
+              <h3 class="services__title">Gymnastics</h3>
+            </div>
+          </div>
+          <div class="services services_crossfit">
+            <div class="services__info">
+              <p class="services__circle">&bull;</p>
+              <h3 class="services__title">Crossfit</h3>
+            </div>
+          </div>
+          <div class="services services_aerobics">
+            <div class="services__info">
+              <p class="services__circle">&bull;</p>
+              <h3 class="services__title">Aerobics</h3>
+            </div>
+          </div>
+        </section>
+        <section class="section-program">
+          <div class="program">
+            <div class="program__info">
+              <h3 class="program__title">Nutritional Plans</h3>
+              <p class="program__text">
+                Nutritional Facts on some shitty things that you don’t care
+                about and even we don’t , I need to replace this copy.
+              </p>
+            </div>
+          </div>
+          <div class="program">
+            <div class="program__info">
+              <h3 class="program__title">Weight Loss</h3>
+              <p class="program__text">
+                Nutritional Facts on some shitty things that you don’t care
+                about and even we don’t , I need to replace this copy.
+              </p>
+            </div>
+          </div>
+          <div class="program">
+            <div class="program__info">
+              <h3 class="program__title">Mental Peace</h3>
+              <p class="program__text">
+                Nutritional Facts on some shitty things that you don’t care
+                about and even we don’t , I need to replace this copy.
+              </p>
+            </div>
+          </div>
+          <div class="program">
+            <div class="program__info">
+              <h3 class="program__title">Home Training</h3>
+              <p class="program__text">
+                Nutritional Facts on some shitty things that you don’t care
+                about and even we don’t , I need to replace this copy.
+              </p>
+            </div>
+          </div>
+          <div class="program">
+            <div class="program__info">
+              <h3 class="program__title">Work/Life Balance</h3>
+              <p class="program__text">
+                Nutritional Facts on some shitty things that you don’t care
+                about and even we don’t , I need to replace this copy.
+              </p>
+            </div>
+          </div>
+          <div class="program">
+            <div class="program__info">
+              <h3 class="program__title">Cardio</h3>
+              <p class="program__text">
+                Nutritional Facts on some shitty things that you don’t care
+                about and even we don’t , I need to replace this copy.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="section-also">
+          <img
+            class="section-also__image"
+            src="./assets/images/section-also.jpg"
+            alt="Photo"
+          />
+          <div class="section-also__info">
+            <div class="section-also__content">
+              <h3 class="section-also__title">YOU SHOULD ALSO KNOW</h3>
+              <p class="section-also__text">
+                MDD affects more than 16.1 million American adults, or about
+                6.7%of the U.S. population age 18 and older in a given year. We
+                at <span class="section-also__text_blue"> ThriveTalk </span> can
+                help you.
+              </p>
+              <button class="section-also__button" type="submit">
+                GET HELP NOW
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="section-ready">
+          <div class="section-ready__info">
+            <div class="section-ready__content">
+              <h3 class="section-ready__subtitle">CONTACT US</h3>
+              <h2 class="section-ready__title">Ready. Set. Smile</h2>
+              <p class="section-ready__text">
+                Take the free online assessment to see if you are a candidate
+                and get started on your journey.
+              </p>
+              <button class="section-ready__button" type="submit">
+                GET HELP NOW
+              </button>
+            </div>
+          </div>
+          <img
+            class="section-ready__image"
+            src="./assets/images/section-ready.jpg"
+            alt="Photo"
+          />
+        </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__contacts">
+          <img
+            class="footer__image"
+            src="./assets/images/footer.jpg"
+            alt="Photo"
+          />
+          <div class="footer__info">
+            <div class="footer__content">
+              <h3 class="footer__title">SOME INFO</h3>
+              <p class="footer__text footer__text_info">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula.
+              </p>
+            </div>
+            <div class="footer__content">
+              <h3 class="footer__title">ENFOLD HEALTH</h3>
+              <p class="footer__text footer__text_address">
+                Main Street 1, Olcott Buffalo, United States
+              </p>
+              <p class="footer__text footer__text_contact">
+                +555 283 784 333
+                <span class="footer__text footer__text_blue"
+                  >office@enfold-health.com</span
+                >
+              </p>
+            </div>
+            <div class="footer__content">
+              <h3 class="footer__title">OFFICE HOURS</h3>
+              <p class="footer__text footer__text_schedule">
+                Mo-Fr: 8:00-19:00 Sa: 8:00-14:00 Su: closed
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copy">
+          <p class="footer__copyright">&copy; Copyright - ThriveTalk 2017</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
