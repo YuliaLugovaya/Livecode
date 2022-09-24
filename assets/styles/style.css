@@ -53,8 +53,8 @@ a {
 }
 
 .nav__link {
-    padding-right: 11px;
-    padding-left: 11px;
+    padding-right: 1vw;
+    padding-left: 1vw;
     font-size: 0.8em;
     line-height: 1em;
     font-weight: bold;
@@ -73,6 +73,7 @@ a {
     background: #62D0DF;
     border-radius: 50px;
     border: none;
+    cursor: pointer;
 }
 
 .header__button:hover {
@@ -143,9 +144,10 @@ a {
     letter-spacing: 0.1em;
     color: #FFFFFF;
     border: none;
+    cursor: pointer;
 }
 
-.section-head__button-1:hover {
+.section-head__button:hover {
     background: #62D0DF;
 }
 
@@ -156,6 +158,7 @@ a {
 
 .section-head__button_clear:hover {
     text-decoration: underline;
+    background: none;
 }
 
 /*--------------------Why Thrive--------------------*/
@@ -224,6 +227,7 @@ a {
 .section-about__text {
     width: 35vw;
     margin-top: 10vh;
+    margin-bottom: 5vh;
     font-size: 1.2em;
     font-weight: bold;
     line-height: 1.7em;
@@ -429,6 +433,7 @@ a {
     color: #FAB63E;
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 .section-also__button:hover {
@@ -496,6 +501,7 @@ a {
     color: #62D0DF;
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 .section-ready__button:hover {
@@ -510,16 +516,15 @@ a {
 
 .footer__info {
     display: flex;
-    align-items: center;
     justify-content: space-around;
     width: 60vw;
+    margin-top: 15vh;
 }
 
 .footer__content {
     display: flex;
     flex-direction: column;
-    height: 18vh;
-
+    min-height: 100%;
 }
 
 .footer__title {
@@ -610,15 +615,13 @@ a {
     }
 
     .footer__image {
-        width: 30vw;
+        width: 40vw;
     }
 
     .footer__info {
-        width: 70vw;
+        width: 60vw;
         min-height: 70vh;
     }
-
-
 }
 
 @media screen and (max-width: 960px){
@@ -651,6 +654,10 @@ a {
         justify-content: center;
         margin: 0 auto;
     }
+
+    .section-about__text {
+        width: 50vw;
+    }
     
     .program__info {
         width: 60vw;
@@ -672,10 +679,96 @@ a {
 
     .footer__info {
         width: 100vw;
-        min-height: 40vh;
+        min-height: 25vh;
+        margin-top: 10vh;
+    }
+
+    .footer__text_info, .footer__text_address, .footer__text_contact, .footer__text_schedule {
+        width: 20vw;
     }
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 768px){
+    .header__button {
+        display: none;
+    }
+
+    .section-also {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7vw;
+    }
     
+    .section-also__info {
+        margin-bottom: 5vh;
+    }
+    
+    .section-also__content {
+        align-self: center;
+        width: 60vw;
+        margin-bottom: 3vh;
+    }
+
+    .section-also__image {
+        width: 100vw;
+        height: 50vh;
+        align-self: center;
+    }
+
+    .section-ready {
+        flex-direction: column;
+    }
+    
+    .section-ready__content {
+        width: 60vw;
+        margin-bottom: 3vh;
+    }
+
+    .section-ready__image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .section-head__content {
+        max-width: 80vw;
+    }
+
+    .section-about__info {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        padding-left: 0;
+    }
+    
+    .section-about__title, .section-about__text {
+        width: 70vw;
+        margin-left: 15vw;
+    }
+
+    .footer__info {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100vw;
+        margin-top: 5vh;
+    }
+
+    .footer__text_info, .footer__text_address, .footer__text_contact, .footer__text_schedule {
+        width: 60vw;
+    }
+
+    .footer__content {
+        min-height: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-whythrive__content {
+        max-width: 70vw;
+    }
+
+    .section-also__content, .section-ready__content {
+        width: 80vw;
+    }   
 }
